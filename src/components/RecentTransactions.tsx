@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box, Typography, Avatar, Divider } from "@mui/material";
+import { Box, Typography, Avatar } from "@mui/material";
 import API from "../services/api";
 
 interface Transaction {
@@ -34,7 +34,7 @@ const RecentTransactions: React.FC = () => {
       <Typography variant="subtitle1" mb={2} color="white">
         Recent Transactions
       </Typography>
-      {recent.map((txn, i) => (
+      {recent.map((txn) => (
         <Box key={txn._id} display="flex" alignItems="center" mb={2}>
           <Avatar sx={{ mr: 2 }} />
           <Box flexGrow={1}>
