@@ -14,7 +14,8 @@ const isAuthenticated = () => !!localStorage.getItem("token");
 
 function App() {
   return (
-    
+        <Router>
+
       <Routes>
         {/* Auth Routes */}
         <Route path="/login" element={<Login />} />
@@ -44,7 +45,8 @@ function App() {
           }
         />
       </Routes>
-    
+        </Router>
+
   );
 }
 
