@@ -16,7 +16,7 @@ const Register: React.FC = () => {
 
     const handleRegister = async () => {
         try {
-            await axios.post("http://localhost:5000/api/auth/register", {
+            await axios.post("https://loopr-backend-2.onrender.com/api/auth/register", {
                 email,
                 password,
             });
