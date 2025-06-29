@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://loopr-backend-2.onrender.com",
+  baseURL: "https://loopr-backend-bsnk.onrender.com",
 });
 
 API.interceptors.request.use((config) => {
