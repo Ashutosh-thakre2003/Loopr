@@ -16,7 +16,7 @@ const Login: React.FC = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("https://loopr-backend-2.onrender.com/api/auth/login", {
+      const response = await axios.post("https://loopr-backend-bsnk.onrender.com/api/auth/login", {
         email,
         password,
       });
