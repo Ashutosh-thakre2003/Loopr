@@ -17,7 +17,7 @@ const OverviewChart: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await API.get("/overview");
+        const res = await API.get("/transactions/overview");
         setData(res.data);
       } catch (err) {
         console.error("Failed to load overview data", err);
